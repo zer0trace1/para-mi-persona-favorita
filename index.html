@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff3f5" />
+  <meta name="description" content="Un lugar extremadamente importante para una persona extremadamente bonita." />
+  <title>Para mi persona favorita ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/content.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <nav class="nav" aria-label="Navegación principal">
+    <a class="brand" href="#inicio">♡ para ti</a>
+    <a href="#juegos" class="nav-link">zona de tonterías ↗</a>
+  </nav>
+
+  <header class="hero" id="inicio">
+    <div class="sparkle s1">✦</div><div class="sparkle s2">♡</div><div class="sparkle s3">✳</div>
+    <div class="hero-inner">
+      <div class="hero-img-wrap">
+        <img class="hero-img" src="assets/cat-01.jpg" alt="Gatito con gafas rosas en forma de corazón" />
+        <span class="sticker">0% agua<br />100% tusho</span>
+      </div>
+      <div class="eyebrow">UNA PÁGINA WEB MUY SERIA Y PROFESIONAL</div>
+      <h1>Hola, <em>mi amor.</em><span class="title-heart"> ♡</span></h1>
+      <p class="hero-copy">Te he hecho una web porque quiero ver tu sonrisita preciosa y quiero animarte.</p>
+      <a class="btn btn-primary" href="#juegos">entra, polillita 💌 <span>↗</span></a>
+      <p class="micro">baja sin miedo · hay gatitos y decisiones cuestionables ↓</p>
+    </div>
+  </header>
+
+  <main id="juegos">
+    <section class="section" id="termometro">
+      <div class="container center reveal">
+        <div class="eyebrow">01 / LABORATORIO DEL AMOR</div>
+        <h2>¿Cuánto te <em>quiero?</em></h2>
+        <p class="lead">Nuestro sofisticado sistema utiliza matemáticas avanzadas y un mixi de prácticas.</p>
+        <div class="card meter-card">
+          <div class="tiny-label">RESULTADO OFICIAL</div>
+          <div class="big-number" id="percentage" aria-live="polite">0%</div>
+          <div class="bar"><div class="bar-fill" id="fill"></div></div>
+          <p id="meter-caption">Pulsa el botón para conocer los resultados.</p>
+          <button class="btn btn-primary" id="measure">calcular amor 🔬</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blush" id="mimitos">
+      <div class="container center reveal">
+        <div class="eyebrow">02 / SERVICIO PÚBLICO DE MIMOS</div>
+        <h2>Máquina de <em>mimitos™</em></h2>
+        <p class="lead">Frases bonitas, frases absurdas y algunas que deberían estar prohibidas.</p>
+        <div class="card">
+          <img src="assets/cat-05.jpg" class="card-cat" alt="Gatito con mofletes rosados" loading="lazy" />
+          <p class="quote" id="compliment" aria-live="polite">«Tengo una cosa que decirte…»</p>
+          <button class="btn btn-primary" id="compliment-btn">dame un mimito 💗</button>
+          <p class="micro" id="compliment-counter">Mimitos entregados: 0</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="container reveal">
+        <div class="center">
+          <div class="eyebrow">03 / ARCHIVO CONFIDENCIAL</div>
+          <h2>Nosotros en otro <em>universo.</em></h2>
+          <p class="lead">No tengo pruebas, pero tampoco dudas.</p>
+        </div>
+        <div class="gallery" id="gallery">
+          <figure class="photo"><img src="assets/cat-02.jpg" alt="Gatito blanco con lazos" loading="lazy" /><figcaption>yo esperando tus mensajes 🎀</figcaption></figure>
+          <figure class="photo"><img src="assets/cat-03.jpg" alt="Gatito con flores" loading="lazy" /><figcaption>flores porque sí 🌷</figcaption></figure>
+          <figure class="photo"><img src="assets/cat-04.jpg" alt="Gatito con una rosa" loading="lazy" /><figcaption>sho en modo caballero 🌹</figcaption></figure>
+          <figure class="photo"><img src="assets/cat-06.jpg" alt="Gatito rodeado de corazones" loading="lazy" /><figcaption>sho cuando te veo 💞</figcaption></figure>
+          <figure class="photo"><img src="assets/cat-07.jpg" alt="Primer plano de gatito" loading="lazy" /><figcaption>cuando me dices hola 🥹</figcaption></figure>
+          <figure class="photo"><img src="assets/cat-08.jpg" alt="Gatito blanco con flores" loading="lazy" /><figcaption>toma, es para ti 💐</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blush" id="pregunta">
+      <div class="container center reveal">
+        <div class="eyebrow">04 / REFERÉNDUM DE MÁXIMA IMPORTANCIA</div>
+        <h2>Una pregunta <em>seria.</em></h2>
+        <img src="assets/cat-02.jpg" class="question-cat" alt="Gatito esperando tu respuesta" loading="lazy" />
+        <h3>¿Tú me kieles? 🥺</h3>
+        <div class="choice-row"><button id="yes" class="btn btn-primary">SÍIIII 💘</button><button id="no" class="btn btn-outline">no 😒</button></div>
+        <p class="result-text" id="answer" aria-live="polite">Piénsalo bien. Si fallas te canio.</p>
+      </div>
+    </section>
+
+    <section class="section" id="quiz">
+      <div class="container center reveal">
+        <div class="eyebrow">05 / EXAMEN DE COMPATIBILIDAD</div>
+        <h2>¿Somos <em>compatibles?</em></h2>
+        <p class="lead">Tres preguntas. Un tribunal de gatitos. Tu futuro en juego.</p>
+        <div class="card quiz-card" id="quiz-card">
+          <div class="quiz-header"><span id="quiz-count">PREGUNTA 1 / 3</span><span>💘</span></div>
+          <h3 id="quiz-question">Cargando…</h3>
+          <div id="quiz-options" class="quiz-options"></div>
+          <p id="quiz-feedback" class="result-text" aria-live="polite"></p>
+          <button id="quiz-next" class="btn btn-primary hidden">siguiente →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blush" id="rasca">
+      <div class="container center reveal">
+        <div class="eyebrow">06 / LOTERÍA ROMÁNTICA</div>
+        <h2>Rasca y <em>gana.</em></h2>
+        <p class="lead">Todos los premios son increíbles. Lo dice la dirección de la empresa (yo).</p>
+        <div class="card">
+          <div class="scratch-area" id="scratch-area">
+            <div class="prize" id="prize">🎁</div>
+            <canvas id="scratch" aria-label="Zona para rascar y descubrir tu premio"></canvas>
+          </div>
+          <p class="micro">Desliza el dedo sobre el recuadro rosa ☝️</p>
+          <button id="new-prize" class="btn btn-outline">otro premio ↻</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ruleta">
+      <div class="container center reveal">
+        <div class="eyebrow">07 / DESTINO AMOROSO</div>
+        <h2>La ruleta de los <em>planes.</em></h2>
+        <p class="lead">Para esos días en los que «me da igual, elige tú» no soluciona absolutamente nada.</p>
+        <div class="card">
+          <div class="wheel-container"><div class="wheel-pointer">▼</div><div id="wheel" class="wheel"><span>🍕</span><span>🎬</span><span>🛏️</span><span>🌻</span><span>💋</span><span>🎮</span></div></div>
+          <p class="quote" id="wheel-result" aria-live="polite">¿Qué nos deparará el destino?</p>
+          <button class="btn btn-primary" id="spin">girar la ruleta ✨</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blush" id="carta">
+      <div class="container center reveal">
+        <div class="eyebrow">08 / CORREO URGENTE</div>
+        <h2>Tienes una <em>cartita.</em></h2>
+        <p class="lead">No es spam. O sí. Spam de amor.</p>
+        <button id="envelope" class="envelope" aria-expanded="false" aria-controls="letter" aria-label="Abrir o cerrar la carta"><span>💌</span><small>tócame</small></button>
+        <div id="letter" class="letter" hidden><h3>Para mi persona favorita ♡</h3><p id="letter-content"></p><span class="signature">con todo mi amor,<br />tu PaÜ 💗</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="assets/cat-09.jpg" class="footer-cat" alt="Gatito rodeado de corazones" loading="lazy" />
+    <div class="eyebrow">FIN… POR AHORA</div>
+    <h2>te quiero un <em>montón.</em></h2>
+    <p>Y si has llegado hasta aquí, oficialmente me debes un beso.</p>
+    <button class="btn btn-primary" id="secret-btn">no pulses aquí 👀</button>
+    <p class="credit">hecho con ♡ mucho amorsito y muchos minimixis.</p>
+  </footer>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-content"><button class="modal-close" id="modal-close" aria-label="Cerrar">×</button><img src="assets/cat-09.jpg" alt="Gatito enamorado" /><h2 id="modal-title">¡¡TE QUIEROOOO!! 💖</h2><p>Has ganado besitos y abrazos ilimitados. Sin fecha de caducidad.</p><button class="btn btn-primary" id="claim">reclamar mis besitos 💋</button></div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
