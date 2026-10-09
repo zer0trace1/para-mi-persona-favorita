@@ -10,8 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/halloween.css" />
   <script src="js/content.js" defer></script>
   <script src="js/app.js" defer></script>
+  <script src="js/halloween.js" defer></script>
 </head>
 <body>
   <div class="progress" id="progress"></div>
@@ -137,6 +139,56 @@
         </div>
       </div>
     </section>
+
+
+    <!-- ESPECIAL HALLOWEEN: puedes cambiar todos estos textos -->
+    <section class="halloween-section" id="halloween" aria-labelledby="halloween-heading">
+      <div class="halloween-sparkles" aria-hidden="true">✦ 🦇 ✧ 🎃 ✦</div>
+      <div class="halloween-container">
+        <div class="halloween-eyebrow">EDICIÓN LIMITADA · OCTUBRE 🎃</div>
+        <h2 id="halloween-heading">Hasta que la muerte <em>nos dé mimitos.</em></h2>
+        <p class="halloween-lead">Dicen que Halloween da miedo. A mí lo que me asusta es estar 5 minutos sin darte un beso.</p>
+        <div class="halloween-hero"><img src="assets/halloween-01.jpg" alt="Dos gatitos disfrazados de bruja y fantasma junto a calabazas" loading="lazy"><span>mi plan favorito: hacer el fantasma contigo 👻</span></div>
+
+        <div class="halloween-panel">
+          <span class="halloween-tag">01 · CONSULTORIO PARANORMAL</span>
+          <h3>¿Truco o besito? 🍬</h3>
+          <p>Este sistema altamente científico determinará tu destino.</p>
+          <div class="halloween-actions"><button type="button" id="halloween-trick" class="halloween-button">Truco 🦇</button><button type="button" id="halloween-kiss" class="halloween-button halloween-button-hot">Besito 💋</button></div>
+          <p id="halloween-fate" class="halloween-fate" aria-live="polite">La brujita está esperando una respuesta…</p>
+        </div>
+
+        <div class="halloween-panel">
+          <span class="halloween-tag">02 · EL ORÁCULO DE LAS CALABAZAS</span>
+          <h3>Elige tu calabaza encantada</h3>
+          <p>Una esconde un premio. Las otras también. Este casino está amañado por amor.</p>
+          <div class="halloween-pumpkins" role="group" aria-label="Elige una calabaza">
+            <button type="button" class="halloween-pumpkin" data-pumpkin="0" aria-label="Calabaza uno">🎃<span>01</span></button>
+            <button type="button" class="halloween-pumpkin" data-pumpkin="1" aria-label="Calabaza dos">🎃<span>02</span></button>
+            <button type="button" class="halloween-pumpkin" data-pumpkin="2" aria-label="Calabaza tres">🎃<span>03</span></button>
+          </div>
+          <p id="halloween-pumpkin-result" class="halloween-fate" aria-live="polite">El destino de los mimitos está en tus manos.</p>
+          <button type="button" id="halloween-reset" class="halloween-secondary">volver a tentar al destino ↻</button>
+        </div>
+
+        <div class="halloween-gallery-intro"><span class="halloween-tag">03 · ÁLBUM CLASIFICADO</span><h3>Expediente: gatitos sospechosamente adorables</h3></div>
+        <div class="halloween-gallery">
+          <figure><img src="assets/halloween-02.jpg" alt="Dos gatitos con sombreros de Halloween" loading="lazy"><figcaption>nosotros llegando a pedir caramelos 🍬</figcaption></figure>
+          <figure><img src="assets/halloween-03.jpg" alt="Dos gatitos vestidos de vampiro" loading="lazy"><figcaption>vampirito, pero de tus besos 🧛</figcaption></figure>
+          <figure><img src="assets/halloween-04.jpg" alt="Gatitos con alas de murciélago bajo la luna" loading="lazy"><figcaption>cita nocturna: 10/10 🌙</figcaption></figure>
+          <figure><img src="assets/halloween-05.jpg" alt="Dos gatitos ilustrados como vampiros" loading="lazy"><figcaption>una pareja normal y corriente 🦇</figcaption></figure>
+          <figure><img src="assets/halloween-06.jpg" alt="Dos gatitos con disfraces de bruja y calabaza" loading="lazy"><figcaption>disfrazados para robarte el corazón 🎃</figcaption></figure>
+        </div>
+        <div class="halloween-final">
+          <span class="halloween-tag">04 · ÚLTIMO HECHIZO</span>
+          <h3>El conjuro del amor eterno (y de las croquetas)</h3>
+          <p>Si pronuncias las palabras mágicas, sucederá algo ridículamente cursi.</p>
+          <button type="button" id="halloween-spell" class="halloween-button halloween-button-hot">abracadabra, dame un beso ✨</button>
+          <p id="halloween-spell-result" class="halloween-fate" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+    <!-- FIN ESPECIAL HALLOWEEN -->
 
     <section class="section blush" id="carta">
       <div class="container center reveal">
